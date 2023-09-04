@@ -21,6 +21,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TestComponent } from './components/test/test.component';
+import { ProductsHeaderComponent } from './pages/home/componenets/products-header/products-header.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { TestComponent } from './components/test/test.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    TestComponent
+    TestComponent,
+    ProductsHeaderComponent
   ],
   imports: [
     BrowserModule,
