@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -19,9 +17,18 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { TestComponent } from './components/test/test.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
