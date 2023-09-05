@@ -22,6 +22,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TestComponent } from './components/test/test.component';
 import { ProductsHeaderComponent } from './pages/home/componenets/products-header/products-header.component';
+import { NavbarCardComponent } from './components/navbar-card/navbar-card.component';
+import { FiltersComponent } from './pages/home/componenets/filters/filters.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ProductsHeaderComponent } from './pages/home/componenets/products-heade
     NavbarComponent,
     HomeComponent,
     TestComponent,
-    ProductsHeaderComponent
+    ProductsHeaderComponent,
+    NavbarCardComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,

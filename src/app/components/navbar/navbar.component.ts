@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
@@ -7,5 +7,10 @@ import { MatMenuTrigger } from '@angular/material/menu';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-//  menu: any;
+  constructor() {  }
+
+  ngOnInit(): void {
+
+    
+  }
 }

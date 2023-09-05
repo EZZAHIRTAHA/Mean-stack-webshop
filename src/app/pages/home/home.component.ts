@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  
+  cols: number = 3;
+  
+  constructor() {  };
+
+  ngOnInit(): void {
+    
+  };
+
+  onColumsCountChange(colsNbr: number): void {
+    this.cols = colsNbr;
+  };
+
 
 }

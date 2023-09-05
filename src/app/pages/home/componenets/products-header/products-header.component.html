@@ -12,12 +12,38 @@
         <div class="flex items-center">
             <div class="">
                 <button mat-button [matMenuTriggerFor]="menu">
-                    <mat-icon>expand_more</mat-icon> 
                     Show {{ itemsCount }}
+                    <mat-icon>expand_more</mat-icon> 
                 </button>
-                <mat-menu #menu="matMenu">
-                </mat-menu>
+                    <mat-menu #menu="matMenu" >
+                        <div class="flex justify-start ml-3 items-start flex-col">
+                            <button mat-button (click)="onItem(22)">
+                                22
+                            </button>
+                            <button mat-button (click)="onItem(40)">
+                                40
+                            </button>
+                            <button mat-button (click)="onItem(12)">
+                                12
+                            </button>
+                        </div>
+                    </mat-menu>                
             </div>
+            <button (click)="onColumsUpdated(1)">
+                <mat-icon>
+                    view_list
+                </mat-icon>
+            </button>
+            <button (click)="onColumsUpdated(3)" >
+                <mat-icon>
+                    view_module
+                </mat-icon>
+            </button>
+            <button (click)="onColumsUpdated(4)">
+                <mat-icon>
+                    view_comfy
+                </mat-icon>
+            </button>
         </div>
     </div>
 </mat-card>
