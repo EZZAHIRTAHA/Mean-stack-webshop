@@ -34,7 +34,7 @@ import { FiltersComponent } from './pages/home/componenets/filters/filters.compo
     TestComponent,
     ProductsHeaderComponent,
     NavbarCardComponent,
-    FiltersComponent
+    FiltersComponent,
   ],
   imports: [
     BrowserModule,

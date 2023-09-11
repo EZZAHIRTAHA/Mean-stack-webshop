@@ -20,4 +20,9 @@ export class HomeComponent {
   };
 
 
+  onShowCategory(haha: string) {
+    
+  }
+
+
 }

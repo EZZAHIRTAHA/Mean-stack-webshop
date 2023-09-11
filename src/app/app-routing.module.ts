@@ -5,7 +5,13 @@ import { TestComponent } from './components/test/test.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent },
-  {path: 'test' , component: TestComponent}
+  {path: 'test' , component: TestComponent},
+  // {
+  //   path: 'draft',
+  //   loadChildren : 
+  //   () => import('./components/draft/draft.module')
+  //   .then((m)=>m.DraftModule)
+  // }
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filters',
@@ -8,11 +8,15 @@ import { Component } from '@angular/core';
 export class FiltersComponent {
 
   categories = ['shoes','t-shirts','hoodies'];
+  @Output() showCategory = new EventEmitter<string>();
 
-  constructor() {  }
+  constructor() {  };
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {  };
 
+  onShowCategorie(category: string): void {
+    this.showCategory.emit(category);
+  };
 
 
 }
