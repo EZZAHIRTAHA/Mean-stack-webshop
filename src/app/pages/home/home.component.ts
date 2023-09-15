@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+
+const  ROWS_HEIGHT: { [id:number]: number } = {
+  1: 400,
+  3: 335,
+  4: 350,
+};
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,7 +16,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent {
   
   cols: number = 3;
-  
+  rowHeight = ROWS_HEIGHT[this.cols];
+  category: string | undefined;
   constructor() {  };
 
   ngOnInit(): void {
@@ -17,11 +26,13 @@ export class HomeComponent {
 
   onColumsCountChange(colsNbr: number): void {
     this.cols = colsNbr;
+    this.rowHeight = ROWS_HEIGHT[this.cols];
+
   };
 
 
-  onShowCategory(haha: string) {
-    
+  onShowCategory(newCtg: string) {
+    this.category = newCtg;
   }
 
 

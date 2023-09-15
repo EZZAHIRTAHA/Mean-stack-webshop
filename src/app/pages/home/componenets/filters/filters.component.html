@@ -5,13 +5,12 @@
         </mat-panel-title>
     </mat-expansion-panel-header>
     <mat-selection-list [multiple]="false" >
-        <mat-list-option  *ngFor="let ctg of categories" [value]="ctg">
+        <mat-list  *ngFor="let ctg of categories" >
             <button (click)="onShowCategorie(ctg)" >
                 {{ ctg }}
             </button>
-        </mat-list-option>
+        </mat-list>
     </mat-selection-list>
 </mat-expansion-panel>
-
 
 

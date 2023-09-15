@@ -15,6 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 
 import { AppComponent } from './app.component';
@@ -24,6 +26,7 @@ import { TestComponent } from './components/test/test.component';
 import { ProductsHeaderComponent } from './pages/home/componenets/products-header/products-header.component';
 import { NavbarCardComponent } from './components/navbar-card/navbar-card.component';
 import { FiltersComponent } from './pages/home/componenets/filters/filters.component';
+import { ProductBoxComponent } from './pages/home/componenets/product-box/product-box.component';
 
 
 @NgModule({
@@ -35,6 +38,7 @@ import { FiltersComponent } from './pages/home/componenets/filters/filters.compo
     ProductsHeaderComponent,
     NavbarCardComponent,
     FiltersComponent,
+    ProductBoxComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,9 @@ import { FiltersComponent } from './pages/home/componenets/filters/filters.compo
     MatTableModule,
     MatBadgeModule,
     MatSnackBarModule,
-    MatTreeModule
+    MatTreeModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
